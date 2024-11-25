@@ -1,7 +1,7 @@
 ### Frontend Deployed link -> "https://alokdubey-vrvsecurityfrontendintern.onrender.com/"
 ### Backend Swagger Deployed link -> "https://vrvsecurityfrontendintern.onrender.com/api-docs"
 
-#### Login id & password (existing id) [Note* do not delete the all admin id]
+#### Login id & password (existing id) [Note* do not delete all admin id]
 #### Admin -> admin@gmail.com pass-> admin
 #### User -> user@gmail.com pass-> user 
 
