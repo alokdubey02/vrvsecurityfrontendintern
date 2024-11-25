@@ -1,0 +1,16 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "cd vrb-backend && npm install",
+    "start-server": "cd vrb-backend && node app.js",
+    "install-client": "cd vrb-frontend && npm install",
+    "build-client": "cd vrb-frontend && npm run build",
+    "start-client": "cd vrb-frontend && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
