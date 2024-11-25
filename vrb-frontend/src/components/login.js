@@ -20,7 +20,7 @@ const Login = () => {
   const handleSubmit = async () => {
     try {
       const response = await fetch(
-        `${https://vrvsecurityfrontendintern.onrender.com}/api/auth/login`,
+        `https://vrvsecurityfrontendintern.onrender.com/api/auth/login`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
