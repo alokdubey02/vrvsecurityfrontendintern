@@ -1,20 +1,29 @@
-# Role and User Management App with Login
+Frontend Deployed link -> "https://alokdubey-vrvsecurityfrontendintern.onrender.com/"
+Backend Swagger Deployed link -> "https://vrvsecurityfrontendintern.onrender.com/api-docs"
 
-This is a React-based application for role and user management with login authentication. It includes components for user login, role management, and user management, as well as authentication, pagination, and role-based access control.
+Login id & password (existing id) [Note* do not delete the all admin id]
+Admin -> admin@gmail.com pass-> admin
+User -> user@gmail.com pass-> user 
+
+# Role-Based Access Control (RBAC) UI with Login authentication
+-This is a MERN-based full-stack application for Role-Based Access Control (RBAC) with login authentication. It includes components for user login, role management, and user management, as well as authentication, pagination, and role-based access control.
+-Implemented the api for CRUD application of user and role.
+-Used Material-ui for the frontend responsiveness. 
+-Implemented protected route for restricted endpoint access.
+-Implemented input validation and error handling at login & creating the user, to ensure robustness.
+-Implemented dynamic search functionallity by name or email for user table.
 
 ## Features
-
 - **Login Page**: Users can log in using their email and password.
-  - If the user is an admin, they are redirected to the **Admin Dashboard**.
-  - If the user is a regular user, they are redirected to the **User Dashboard**.
+  - If the user is an admin, they are redirected to the **Admin Dashboard**. And have ability for Role and User management.
+  - If the user is a regular user, they are redirected to the **User Dashboard**. And can only view their profile and permissions.
+  
 - **Role Management**: Admin users can manage roles.
-
   - View, create, edit, and delete roles.
   - Assign permissions to roles.
   - Pagination and search for roles.
 
 - **User Management**: Admin users can manage users.
-
   - View, create, edit, and delete users.
   - Assign roles and statuses to users.
   - Search users by name or email.
@@ -24,7 +33,6 @@ This is a React-based application for role and user management with login authen
 - **Status Management**: Users can be marked as "Active" or "Inactive".
 
 ## Technologies Used
-
 - **React**: For building the user interface.
 - **Material-UI**: For UI components (e.g., tables, buttons, dialogs).
 - **JavaScript (ES6)**: Programming language used for the development.
@@ -32,7 +40,6 @@ This is a React-based application for role and user management with login authen
 - **Fetch API**: To interact with the backend API.
 
 ## Swagger API Documentation
-
 Swagger is integrated into the backend for easy API documentation and testing. To access the Swagger UI, follow the steps below:
 
 1. Ensure the Backend is Running
@@ -42,10 +49,8 @@ Swagger is integrated into the backend for easy API documentation and testing. T
    Once the backend server is running, navigate to the following URL in your browser:
 
 ```bash
-http://localhost:5000/api-docs
+https://vrvsecurityfrontendintern.onrender.com/api-docs
 ```
-
-Note: Replace localhost:5000 with your backend server's URL if you're running it on a different host or port.
 
 3. Interact with the API
    Swagger provides a user-friendly interface where you can:
@@ -60,41 +65,74 @@ User management (Create, Update, Delete, View users)
 Role management (Create, Update, Delete, View roles)
 You can explore each endpoint’s details by clicking on the endpoints and expanding the documentation.
 
-## Setup
+## Steps to setup frontend & backend in your local system.
+
+## Setup in your local(Frontend)
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/role-user-management-app.git
+git clone https://github.com/alokdubey02/vrvsecurityfrontendintern.git
 ```
 
-2. Navigate to the Project Folder
+2. Navigate to the Project Folder (frontend)
 
 ```bash
-   cd role-user-management-app
+   cd vrvsecurityfrontendintern
+   cd vrb-frontend
 ```
 
 3. Install Dependencies
 
-````bash
+```bash
    npm install
 ```
 
 4. Configure Environment Variables
    Create a .env file in the root of the project and set the backend URL:
 
-REACT_APP_BACKEND_URL=http://localhost:5000
+REACT_APP_BACKEND_URL=http://localhost:5000 (for local server) "https://vrvsecurityfrontendintern.onrender.com/"  (for global)
 
 5. Start the Development Server
 ```bash
    npm start
 ```
 
-6. Access the App
-   The app will be available at http://localhost:3000.
+## Setup in your local(Backend)
+
+### 1. Clone the Repository
 
 ```bash
-role-user-management-app/
+git clone https://github.com/alokdubey02/vrvsecurityfrontendintern.git
+```
+
+2. Navigate to the Project Folder (frontend)
+
+```bash
+   cd vrvsecurityfrontendintern
+   cd vrb-backend
+```
+
+3. Install Dependencies
+
+```bash
+   npm install
+```
+
+4. Configure Environment Variables
+   Create a .env file in the root of the project and set the backend URL:
+
+  MONGO_URI=your mongo uri (e.g. mongodb+srv://)
+  PORT=5000
+
+5. Start the Development Server
+
+```bash
+   node app.js
+```
+
+```bash
+vrvsecurityfrontendintern/
 ├── src/
 │   ├── components/
 │   │   ├── Login.js               # Login component
@@ -108,7 +146,7 @@ role-user-management-app/
 └── README.md                      # This file
 ```
 
-UserTable Component
+#UserTable Component
 The UserTable component allows users to manage users, including the ability to:
 
 View: Display a list of users with details like name, email, role, and status.
