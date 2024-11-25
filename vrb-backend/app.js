@@ -30,7 +30,7 @@ const swaggerOptions = {
           },
           servers: [
                {
-                    url: 'http://localhost:5000/api',  // Your API base URL
+                    url: 'https://vrvsecurityfrontendintern.onrender.com/api',  // Your API base URL
                },
           ],
      },
