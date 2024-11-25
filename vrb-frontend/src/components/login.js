@@ -50,7 +50,6 @@ const Login = () => {
   return (
     <div
       style={{
-        //backgroundImage: "url('https://www.example.com/background.jpg')", // optional: set a background image
         backgroundColor: "#f0f4f8", // fallback background color
         minHeight: "100vh",
         display: "flex",
